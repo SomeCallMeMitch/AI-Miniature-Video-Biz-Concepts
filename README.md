@@ -23,6 +23,7 @@ For any new chat/session, read these in order:
 9. [`docs/07-validation-plan.md`](docs/07-validation-plan.md) — practical low-cost testing plan.
 10. [`docs/08-ideas-backlog.md`](docs/08-ideas-backlog.md) — adjacent markets and format ideas.
 11. [`docs/09-chat-handoff-protocol.md`](docs/09-chat-handoff-protocol.md) — how future chats should maintain this repository.
+12. [`archive/chats/`](archive/chats/) — dated historical session summaries for recovering details that were compressed out of the current state.
 
 ## Current Leading Thesis
 
@@ -47,6 +48,11 @@ The defensible system is closer to:
 - Research claims should include a date and source when possible.
 - Anything uncertain should be labeled **Hypothesis**, **Unverified**, or **Needs revalidation**.
 - Do not silently overwrite a prior conclusion; note what changed and why in `PROJECT_STATE.md`.
+- Significant chats should get a dated summary under `archive/chats/` so future sessions can recover ideas that do not belong in the short current-state file.
+
+## Suggested New-Chat Prompt
+
+> This project uses this GitHub repo as durable memory: https://github.com/SomeCallMeMitch/AI-Miniature-Video-Biz-Concepts. Read README.md, PROJECT_STATE.md, HANDOFF.md, and any docs relevant to my request before continuing. Treat PROJECT_STATE.md as the current truth, but search the archive if something seems missing.
 
 ## Repository
 
