@@ -1,6 +1,6 @@
 # Next Chat Handoff
 
-**Date:** 2026-09-01
+**Date:** 2026-09-02
 
 ## Read first
 
@@ -11,109 +11,98 @@ Before continuing this project, read:
 3. `docs/03-real-estate-miniature-service.md`
 4. `docs/05-market-and-competition.md`
 5. `docs/07-validation-plan.md`
+6. `docs/08-ideas-backlog.md`
+7. `docs/09-chat-handoff-protocol.md`
 
-If something seems missing, check:
-
-`archive/chats/2026-09-01-initial-concept-session.md`
+If something seems missing, check `archive/chats/`.
 
 ## Where the project stands
 
-The project has moved from a general "AI miniature videos might get views" idea to a more focused thesis:
+The project remains focused on testing **AI-native real-estate listing media**, with realistic miniature/unboxing treatments as the first signature format.
 
-> **Test AI-native real-estate listing media, with realistic miniature/unboxing treatments as the first signature format.**
+The strongest immediate objective is now:
 
-The strongest business model currently appears to be direct B2B service revenue from realtors/teams/builders rather than relying on YouTube ads.
+> **Determine the highest-quality September 2026 production workflow that can transform real listing assets into premium miniature video while preserving the identity of the property.**
 
-A second concept remains viable: miniature product unboxings/demos tied to affiliate offers.
+Do not build automation, a broad website, or a mass-market offer yet.
 
-## What has already been decided
+## New strategic hypothesis to preserve
 
-- Do not build a full automation system yet.
-- Do not assume "miniature" itself is a moat.
-- Do not rely on generic faceless AI-video volume.
-- Preserve real property/product identity; avoid hallucinating material facts.
-- Start with a small technical + market validation budget (~$100-$200).
-- Human hands/physical manipulation are an important creative device because they establish scale.
-- The personalized watermarked-preview outreach model is worth testing with realtors.
+A new hypothesis was added on 2026-09-02:
 
-## Best next task
+Rather than publicly launching a low-priced service and accelerating copycats, the business may eventually be stronger as a scarce, bespoke creative service for agents selling multi-million-dollar properties, potentially with geographic/client exclusivity and materially higher pricing.
 
-The next chat should focus on **production feasibility and test design**.
+This is not yet a final strategy. Technical quality must be proven first.
 
-Recommended sequence:
+A warm test path may exist through the user's niece, a San Diego realtor connected to an office marketing properties in the low-million-dollar range. If the production workflow passes, this may be a good first private environment for permissioned listing assets and candid agent feedback.
 
-### 1. Identify current best tools/models
+## Best next task — production feasibility research
+
+Use current, source-backed research. The preferred setup is a substantial Work/Deep Research session rather than a lightweight chat-only scan.
 
 Research the strongest current options for:
 
 - image-to-image miniature transformation
-- product/property fidelity
+- property/architectural fidelity
+- reference-image consistency
 - image-to-video
-- hand/object interaction
+- believable hand/object interaction
 - multi-shot consistency
-- cost per generation
+- controlled camera motion
+- cost per generation / expected retry economics
 - API availability
-- commercial-use terms
+- commercial-use rights/terms
+- practical workflow integration
 
-Build a comparison table.
+Compare two targets:
 
-### 2. Design six prototypes
+1. **Best-quality premium stack** — optimize for client-ready output even if generation cost is relatively high.
+2. **Lowest-cost commercially viable stack** — optimize for repeatable economics once quality is sufficient.
 
-Three real-estate and three product tests.
+## Prototype design required from the research
 
-For each, specify:
+Design at least three controlled real-estate tests:
+
+1. **House in Hand**
+2. **Real -> Miniature -> Real**
+3. **Premium Miniature Listing Unboxing**
+
+For each specify:
 
 - source asset requirements
 - exact visual concept
 - shot list
-- model/tool
-- prompt structure
-- expected generation count
-- target cost
+- recommended model/tool per stage
+- prompt/reference strategy
+- expected generation/retry count
+- estimated generation cost
+- editing requirements
 - fidelity checklist
+- pass/fail criteria
 
-### 3. Prioritize one hero real-estate format
+Do not call a test successful merely because a model produced a visually interesting video. Property identity and client-ready polish matter.
 
-Current favorite candidate:
+## Repository requirement for the next research chat
 
-**Miniature Listing Unboxing**
+The GitHub repository is the durable project memory.
 
-Concept:
+The next Work/Deep Research session must:
 
-A package arrives -> hand opens it -> realistic miniature of the actual listing is removed -> roof/interior reveal -> transition into real listing footage -> property/agent CTA.
+1. read the repo before researching
+2. search existing docs/archive before assuming an idea is new
+3. save detailed research into a suitable `research/` or `docs/` file
+4. include source links/dates for time-sensitive model, pricing, API, and licensing claims
+5. update `PROJECT_STATE.md` with conclusions that alter strategy or next steps
+6. rewrite `HANDOFF.md` for the following session
+7. create a dated archive summary for significant work
 
-Compare this against simpler formats such as house-in-hand and real-to-mini transition, because the simpler format may be cheaper and more reliable.
+Do not leave important findings only in the Work chat.
 
-### 4. Define pass/fail criteria before generating
+## Current decision discipline
 
-Track:
-
-- realism
-- property fidelity
-- consistency
-- hand quality
-- cost
-- retries
-- editing minutes
-- visual hook strength
-
-Do not call a test successful merely because a model produced a video.
-
-## Important research follow-up
-
-The first market scan found evidence that miniature product and real-estate effects already exist, but no clearly dominant operator was identified around the exact personalized realtor-service model.
-
-A future research pass should build a real swipe file from TikTok, Instagram, YouTube Shorts, creative studios, Fiverr/Upwork, and real-estate agencies.
-
-Capture actual view counts, repeated formats, service offers, and pricing where visible.
-
-## Repository maintenance instruction
-
-At the end of the next substantial chat:
-
-1. update `PROJECT_STATE.md`
-2. update relevant `docs/` files
-3. rewrite this `HANDOFF.md`
-4. create a dated summary in `archive/chats/`
-
-Do not rely on chat history alone.
+- Miniature itself is not the moat.
+- Preserve factual property identity.
+- Premium quality currently matters more than minimizing generation cost.
+- Do not expose the full business publicly until we decide whether scarcity/exclusivity creates value.
+- Do not automate before the manual/semi-manual workflow and demand are validated.
+- Keep the product-affiliate concept as a secondary option, not the current focus.
