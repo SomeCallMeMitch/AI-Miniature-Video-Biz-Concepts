@@ -16,7 +16,31 @@ Then ask it to inspect the relevant `docs/` file(s) for the current task.
 
 Recommended startup prompt:
 
-> This project uses this GitHub repo as durable memory: https://github.com/SomeCallMeMitch/AI-Miniature-Video-Biz-Concepts. Read README.md, PROJECT_STATE.md, HANDOFF.md, and any docs relevant to my request before continuing. Treat PROJECT_STATE.md as the current truth, but preserve useful older ideas rather than deleting them.
+> This project uses this GitHub repo as durable memory: https://github.com/SomeCallMeMitch/AI-Miniature-Video-Biz-Concepts. Read README.md, PROJECT_STATE.md, HANDOFF.md, and any docs relevant to my request before continuing. Treat PROJECT_STATE.md as the current truth, but preserve useful older ideas rather than deleting them. Search the archive if something seems missing.
+
+## Mandatory persistence rule
+
+Any substantial Chat, Work, Deep Research, or Codex session for this project must treat GitHub as the durable system of record.
+
+Do not leave important findings, decisions, hypotheses, pricing ideas, experiments, workflows, research sources, or next actions only in chat history.
+
+At the end of a meaningful task—or earlier when a major decision is reached—the assistant should write the useful durable output back to the repository when it has GitHub access.
+
+If direct GitHub write access is unavailable, the assistant should produce the exact proposed file updates so they can be committed in a follow-up session.
+
+## Research-session requirements
+
+For a substantial research task, especially Deep Research or Work:
+
+1. Read `PROJECT_STATE.md` before forming recommendations.
+2. Search relevant `docs/` and `archive/chats/` before assuming an idea is new.
+3. Preserve source links, dates, pricing snapshots, commercial-use/API notes, and confidence labels for time-sensitive claims.
+4. Separate observed facts from hypotheses and recommendations.
+5. Update or create the relevant research/domain document rather than bloating `PROJECT_STATE.md` with all raw detail.
+6. Update `PROJECT_STATE.md` with only the conclusions that change current strategy, assumptions, or next actions.
+7. Rewrite `HANDOFF.md` so the next session knows what was learned and what to do next.
+8. Create a dated archive summary for significant sessions.
+9. Never silently replace an older conclusion. Record what changed and why.
 
 ## End-of-chat procedure
 
