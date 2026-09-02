@@ -18,6 +18,51 @@ This file is intentionally broader and less filtered than the core project docs.
 - tiny construction progress recap
 - tiny luxury-home feature showcase
 
+## Premium / exclusivity positioning ideas
+
+**Hypothesis — 2026-09-02:** The strongest initial offer may not be a widely advertised commodity service. Consider a deliberately limited, high-end creative service for agents handling multi-million-dollar properties.
+
+Ideas to test later:
+
+- limited number of agents per market or ZIP code
+- premium bespoke fee rather than low-cost per-Reel pricing
+- no broad self-serve website at first
+- private portfolio / invitation-only sales process
+- geographic or brokerage exclusivity as a paid feature
+- custom creative direction per listing rather than repeating one obvious template
+- white-glove revisions and property-fidelity QA
+- optional confidentiality before listing launch
+- sell differentiation/status, not merely AI production
+
+Potential strategic upside:
+
+- fewer clients needed
+- higher allowable production cost
+- stronger perceived differentiation
+- less immediate public exposure of the full workflow/business model
+
+Risks to test:
+
+- exclusivity may not matter enough to buyers
+- agents may still anchor pricing to ordinary social-video services
+- keeping the service private can slow portfolio building and inbound demand
+- AI tools may commoditize the effect regardless of marketing strategy
+
+## Warm private validation path
+
+A potential first test can come through the user's niece, a realtor in San Diego connected to an office marketing properties in the low-million-dollar range.
+
+Possible use when production is ready:
+
+- obtain permissioned listing assets
+- create 1-3 private premium prototypes
+- gather candid feedback from working agents
+- test perceived value before setting price
+- ask which features/creative treatments would actually matter to sellers and agents
+- test whether exclusivity or market-limited availability increases appeal
+
+Treat this as a test opportunity, not proof of demand.
+
 ## Product formats
 
 - tiny drone unboxing
