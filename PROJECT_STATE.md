@@ -1,6 +1,6 @@
 # Project State
 
-**Last updated:** 2026-09-01
+**Last updated:** 2026-09-02
 
 ## Current status
 
@@ -54,17 +54,40 @@ Examples: drones, cameras, smart-home devices, power stations, tools, RV/camping
 
 ## Business-model preference
 
-Current thinking favors **direct B2B service revenue first**, because reaching $1,000/month may require only a handful of clients rather than very large view counts.
+Current thinking still favors **direct B2B service revenue first**, because reaching meaningful revenue may require only a handful of clients rather than very large view counts.
+
+### New premium/exclusivity hypothesis — 2026-09-02
+
+**Hypothesis:** Rather than launching a public low-priced service with a broad website and teaching the market the format, the stronger initial business may be a deliberately scarce, high-end creative service for agents selling multi-million-dollar properties.
+
+Possible advantages:
+
+- higher fees make expensive/high-touch production economically acceptable
+- exclusivity can become part of the offer
+- less public promotion may slow immediate imitation/copycat pressure
+- luxury agents may care more about differentiation than low unit price
+- a small number of high-value clients could validate the business faster than broad-market volume
+
+This is **not yet a decision**. It should be tested after production quality is proven.
+
+### Private first-customer path
+
+A warm validation opportunity exists through the user's niece, a realtor in San Diego connected with an office that markets properties in the low-million-dollar range.
+
+**Hypothesis:** Her office could provide a safer first environment for obtaining listing assets, testing one or more premium prototypes, and collecting candid realtor feedback before any broad public launch.
+
+Do not treat this relationship as proof of demand. Use it as an initial test channel if/when production quality is ready.
 
 Possible revenue stack:
 
-1. per-video realtor/listing production fees
-2. monthly agent/team subscriptions
-3. builder/developer packages
-4. affiliate revenue
-5. sponsorships
-6. platform ad revenue
-7. lead-generation/referral opportunities
+1. premium bespoke listing-video fees
+2. per-video realtor/listing production fees
+3. monthly agent/team subscriptions
+4. builder/developer packages
+5. affiliate revenue
+6. sponsorships
+7. platform ad revenue
+8. lead-generation/referral opportunities
 
 ## Important strategic conclusions
 
@@ -73,8 +96,9 @@ Possible revenue stack:
 - Real products/properties add recognition and commercial intent.
 - The service should preserve factual accuracy. Stylize scale and presentation, not material facts.
 - For real estate, fabricated additions should be clearly labeled as concepts rather than presented as actual listing features.
-- The best production strategy is initially to constrain cost and choose formats that do not require lots of expensive generative-video seconds.
+- The best production strategy is initially to constrain cost, but premium positioning may justify higher production cost if output quality and pricing support it.
 - Build automation only after validating that viewers stop and buyers pay.
+- Avoid unnecessarily broadcasting the full business model before we know whether a scarce/private positioning creates strategic value.
 
 ## Prior automation research
 
@@ -96,22 +120,24 @@ Do **not** interpret the project as evidence that a fully autonomous YouTube cha
 1. Can current image/video models preserve the identity of a real house while making it convincingly miniature?
 2. Can they maintain geometry, windows, rooflines, landscaping, room layouts, finishes, pools, etc. closely enough for listing use?
 3. Can the miniature effect be produced consistently for a practical cost per finished video?
-4. Does the format produce measurably better retention/engagement than conventional listing video?
-5. Will agents pay roughly $79-$249 per short video or $399-$599+ per monthly package?
-6. Can personalized watermarked spec previews create a viable outbound-sales funnel?
+4. What quality ceiling can current premium workflows achieve if cost is temporarily secondary?
+5. Does the format produce measurably better retention/engagement than conventional listing video?
+6. Will luxury/upper-end agents pay materially more for bespoke/exclusive creative than the earlier $79-$249 test range?
+7. Can personalized watermarked spec previews create a viable outbound-sales funnel?
+8. Does limiting public exposure/exclusivity improve willingness to pay enough to justify a narrower go-to-market strategy?
 
 ## Immediate next actions
 
-1. Collect 10-20 strong miniature-video references from TikTok, Instagram, YouTube, and creator portfolios.
-2. Identify 3 representative real-estate listings with good public media for private prototype testing.
-3. Produce 3 miniature product tests and 3 miniature property tests.
-4. Track generation cost, retries, consistency, edit time, and final quality.
-5. If quality passes, test organic view behavior.
-6. If view behavior passes, create personalized preview samples for 20-50 agents and measure response/purchase rate.
-7. Only then design automation and scale.
+1. Conduct a current (September 2026) production-feasibility study of the strongest image/video tools and workflows.
+2. Compare both a **best-quality premium stack** and a **lowest-cost commercially viable stack**.
+3. Research image-to-image miniature transformation, real-property fidelity, image-to-video, hand/object interaction, multi-shot consistency, generation cost, API availability, and commercial-use terms.
+4. Design three controlled real-estate prototypes: House in Hand, Real -> Miniature -> Real, and Premium Miniature Listing Unboxing.
+5. Define source-asset requirements, shot lists, prompt structure, retry assumptions, expected cost, and fidelity/pass-fail criteria before generation.
+6. If technical quality passes, consider using the San Diego realtor connection as the first private test environment.
+7. Only after technical proof should we finalize public-vs-private positioning, pricing, outbound strategy, or automation.
 
 ## Current recommendation
 
-**Green-light a small validation project, not a full business build.**
+**Green-light a focused production-feasibility and prototype-design phase, not a full business build.**
 
-Suggested initial spend: approximately **$100-$200** to answer the technical and market questions above.
+The immediate objective is to determine whether current tools can create an output that feels genuinely premium and preserves the identity of an actual listing.
