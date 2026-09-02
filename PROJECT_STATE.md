@@ -4,140 +4,228 @@
 
 ## Current status
 
-Project created after exploring whether AI-generated miniature videos could become a practical small business, affiliate channel, or lead-generation service.
+The project is testing whether AI-generated miniature/scale-model treatments of **actual real-estate listings** can become premium, factual, scroll-stopping listing media.
 
-The project began from two observations:
+A current September 2026 production-feasibility study has now been completed and saved at:
 
-1. Realistic miniature product videos — e.g. tiny DJI-style electronics manipulated by a human hand — can be highly attention-grabbing.
-2. The same treatment may be more commercially valuable when applied to real real-estate listings, especially when sold as a service to agents rather than relying only on platform monetization.
+- `research/2026-09-production-stack-feasibility.md`
+
+### Current technical conclusion — 2026-09-02
+
+**Conditional green light for controlled production tests.**
+
+Current image/video systems appear capable of producing premium miniature real-estate creative that preserves a recognizable property **when used in a constrained multi-stage workflow with human QC**. They are **not reliable enough to be treated as exact architectural reconstruction systems or to let one video model freely invent the whole shot.**
+
+The preferred production philosophy is:
+
+> **Lock facts first. Animate second. Stylize scale and presentation, not the property itself.**
+
+Recommended production structure:
+
+**permissioned listing assets -> property identity/geometry pack -> approved miniature still or geometry-locked maquette -> constrained video generation/editing -> real hand/performance plate where needed -> conventional finishing -> property-fidelity QC**
 
 ## Current leading opportunity
 
 ### #1 — Miniature real-estate listing media
 
-Create realistic miniature versions of actual listings from existing listing photos/video, then produce short-form social videos such as:
+Potential formats:
 
-- miniature house in a hand
-- fake miniature unboxing of the property
-- dollhouse/roof-off reveal
 - real -> miniature -> real transformation
-- "guess the price" miniature format
-- miniature neighborhood/amenity visualization
+- house in a human hand
+- premium miniature listing unboxing
+- roof-off/dollhouse reveal only when interior geometry can be supported accurately
+- guess-the-price / social variants later
 
-Potential buyer:
+Potential buyers remain:
 
 - individual realtors
-- realtor teams
-- brokerages
+- teams/brokerages
 - builders/developers
 - luxury property marketers
 - vacation-rental operators
-- yacht/RV/other high-ticket brokers as adjacent markets
+- adjacent high-ticket brokers later
 
-The main selling proposition is not "AI video." It is:
+The selling proposition remains:
 
 > Turn an ordinary listing into a scroll-stopping social asset while preserving the identity of the actual property.
 
 ### #2 — Miniature product affiliate/content channel
 
-Create realistic miniature unboxings/demos of real products and direct viewers to affiliate links or sponsored offers.
+Still a secondary concept, not the current focus.
 
-Likely best categories have:
+## Production findings that now matter
 
-- recognizable products
-- strong buying intent
-- high average order value
-- worthwhile affiliate economics
-- visually demonstrable features
+### Still-image layer
 
-Examples: drones, cameras, smart-home devices, power stations, tools, RV/camping equipment, projectors, robots, etc.
+Current leading candidates:
+
+- **Gemini 3 Pro Image** — premium multi-reference miniature master
+- **Gemini 3.1 Flash Image** — lower-cost/high-volume reference preparation
+- **FLUX.2 Max/Pro** — premium A/B and corrective editing
+- **Seedream 5.0 Pro** — useful when a sketch/clay/geometry reference is available
+- **GPT Image 2** — corrective/semantic-edit fallback
+
+### Video layer
+
+Current leading candidates:
+
+- **Gemini Omni Flash 1.1** — default control/iteration candidate; GA as of 2026-08-27
+- **Wan 3.0** — new high-priority reference/edit candidate; added 2026-08-26
+- **MiniMax H3 / Hailuo 3** — very strong cost/quality candidate for approved-still animation
+- **Seedance 2.5** — premium specialist for many references, video-to-video, white/clay-model control, and difficult interactions
+- **Veo 3.1** — high-finish option when its smaller reference budget is sufficient
+- **Runway Gen-4.5** — camera/motion specialist, but provider itself documents object-permanence limitations
+- **Runway Aleph 2** — useful for editing real hand/proxy performance footage
+
+### Excluded forward-looking option
+
+**Sora should not be built into the production architecture.** OpenAI’s Sora API is scheduled to shut down on **2026-09-24**.
+
+## Property-accuracy rule
+
+For normal listing media, we may stylize:
+
+- scale
+- presentation
+- camera treatment
+- environment
+- packaging
+
+We should not intentionally fabricate material property facts.
+
+Treat these as critical invariants when visible:
+
+- story count
+- roof shape/silhouette
+- garage count/position
+- windows/doors and major placement
+- driveway
+- balconies/decks
+- pool shape/location
+- major landscaping/terraces
+- exterior materials
+- prominent architectural features
+- important interior layout/finishes if interiors are shown
+
+A beautiful result with a material property change is a **failed generation**, not a successful creative variation.
+
+## Geometry-anchor strategy
+
+**New inference — 2026-09-02:** When Matterport, CAD, floorplans, or another digital twin exists, use it as a geometry anchor rather than asking AI to infer unseen architecture.
+
+Matterport can provide meshes/textures/photos/floorplans, and MatterPak can provide OBJ geometry plus textures and related assets. A premium workflow may render a simplified clay/white maquette at the exact desired angle, then use an image model to turn that geometry-locked render into a premium physical miniature.
+
+This needs direct testing to determine whether the added labor materially improves property fidelity.
+
+## Hand-interaction strategy
+
+**New production hypothesis — 2026-09-02:** For difficult hand/unboxing shots, use a **real performance plate** with an actual hand and neutral proxy/rough maquette, then use reference-conditioned video editing to replace/transform the proxy into the approved property miniature.
+
+Reason: pure generation otherwise asks one model to solve hand anatomy, physics, occlusion, property geometry, and camera motion simultaneously.
+
+Test with Wan 3.0, Seedance 2.5, Gemini Omni editing, and/or Runway Aleph 2.
+
+## Experiment order
+
+### Test 1 to execute — **Real -> Miniature -> Real**
+
+This currently offers the best ratio of:
+
+**visual impact × property fidelity × repeatability × production complexity**
+
+Why first:
+
+- authentic listing media anchors beginning/end
+- miniature still can be approved before motion
+- first/last-frame workflows can control the transformation
+- avoids hand/occlusion risk initially
+- separates still-fidelity problems from video-fidelity problems
+
+### Test 2 after that — **House in Hand**
+
+Use a real hand/performance plate and keep first rotation small. Do not begin with a full 180°/360° orbit.
+
+### Test 3 after Tests 1/2 pass — **Premium Miniature Listing Unboxing**
+
+Use a real box/hand/proxy performance plate. The first prototype should reveal/lift the house but **not open the roof/house itself**. Only test interior/roof-off articulation once interior geometry is documented.
+
+## Planning economics
+
+Current generation-spend estimates for first polished prototypes:
+
+- **Real -> Miniature -> Real:** premium ~$12-$40; cost-efficient target ~$3-$12; roughly 2-4 human hours
+- **House in Hand:** premium ~$20-$70; cost-efficient target ~$5-$20; roughly 3-6 human hours
+- **Premium Unboxing:** premium ~$50-$150+; low-cost attempt ~$15-$40 but not recommended as the quality target; roughly 6-12 human hours
+
+These are **planning estimates**, not measured project costs. Actual retries and human time must be logged during testing.
+
+### Budget assumption changed — 2026-09-02
+
+**Prior belief:** Stage 1 technical proof should target roughly **$100-$200 total**.
+
+**New evidence:** Premium reference-heavy/V2V workflows can consume meaningful retries, and quality is currently more important than forcing an early low-cost ceiling.
+
+**Revised conclusion:** Do not use $100-$200 as a hard cap for the quality-ceiling test. Allow roughly **$150-$300 in generation spend if necessary for the full controlled three-prototype feasibility run**, while still tracking approved-output economics. The old $100-$200 target can remain an efficiency goal after the winning workflow is known.
 
 ## Business-model preference
 
-Current thinking still favors **direct B2B service revenue first**, because reaching meaningful revenue may require only a handful of clients rather than very large view counts.
+Current thinking still favors **direct B2B service revenue first** rather than relying on platform ad revenue.
 
-### New premium/exclusivity hypothesis — 2026-09-02
+### Premium/exclusivity hypothesis — 2026-09-02
 
-**Hypothesis:** Rather than launching a public low-priced service with a broad website and teaching the market the format, the stronger initial business may be a deliberately scarce, high-end creative service for agents selling multi-million-dollar properties.
+**Hypothesis:** The strongest initial offer may ultimately be a deliberately scarce, high-end creative service for agents handling multi-million-dollar properties rather than a widely advertised low-cost AI-video service.
 
-Possible advantages:
+Potential benefits include higher allowable production cost, differentiation, and less immediate broadcasting of the workflow.
 
-- higher fees make expensive/high-touch production economically acceptable
-- exclusivity can become part of the offer
-- less public promotion may slow immediate imitation/copycat pressure
-- luxury agents may care more about differentiation than low unit price
-- a small number of high-value clients could validate the business faster than broad-market volume
+This remains **unvalidated** and should not drive the technical experiment.
 
-This is **not yet a decision**. It should be tested after production quality is proven.
+### Warm private test path
 
-### Private first-customer path
+A possible first private client/realtor-feedback path exists through the user's niece, a San Diego realtor connected with an office marketing properties in the low-million-dollar range.
 
-A warm validation opportunity exists through the user's niece, a realtor in San Diego connected with an office that markets properties in the low-million-dollar range.
-
-**Hypothesis:** Her office could provide a safer first environment for obtaining listing assets, testing one or more premium prototypes, and collecting candid realtor feedback before any broad public launch.
-
-Do not treat this relationship as proof of demand. Use it as an initial test channel if/when production quality is ready.
-
-Possible revenue stack:
-
-1. premium bespoke listing-video fees
-2. per-video realtor/listing production fees
-3. monthly agent/team subscriptions
-4. builder/developer packages
-5. affiliate revenue
-6. sponsorships
-7. platform ad revenue
-8. lead-generation/referral opportunities
+Use this only **after** the technical workflow passes. It is not evidence of demand.
 
 ## Important strategic conclusions
 
-- Miniature itself is not a moat. Generation tools are rapidly commoditizing the effect.
-- Human hands/physical interaction are valuable because they establish scale and realism immediately.
-- Real products/properties add recognition and commercial intent.
-- The service should preserve factual accuracy. Stylize scale and presentation, not material facts.
-- For real estate, fabricated additions should be clearly labeled as concepts rather than presented as actual listing features.
-- The best production strategy is initially to constrain cost, but premium positioning may justify higher production cost if output quality and pricing support it.
-- Build automation only after validating that viewers stop and buyers pay.
-- Avoid unnecessarily broadcasting the full business model before we know whether a scarce/private positioning creates strategic value.
-
-## Prior automation research
-
-We examined the open-source `darkzOGx/youtube-automation-agent` project. Useful concepts to borrow later include:
-
-- persistent channel/business objectives
-- specialized pipeline stages
-- approval gates
-- analytics feedback loops
-- audience-comment mining
-- provider-independent AI services
-- production-readiness checks
-- separating real production from simulated/fallback output
-
-Do **not** interpret the project as evidence that a fully autonomous YouTube channel is likely to make money. Its value is architectural.
+- Miniature itself is not a moat.
+- Exact property identity matters more than generating a pretty miniature.
+- Current AI can support the workflow but does not guarantee architectural truth.
+- Approve the miniature still/geometry before asking a video model to animate it.
+- Avoid free camera orbits unless unseen angles are supported by real references/3D geometry.
+- Human hands remain a strong scale cue, but hand+property interaction is a higher-risk technical problem.
+- Performance-plate/V2V may be more reliable than pure generation for hands and packaging.
+- Conventional editing/compositing is part of the premium workflow, not a failure of the AI approach.
+- Build automation only after the manual/semi-manual workflow is repeatable and buyers care.
+- Keep the public-vs-private/exclusivity question separate until technical quality is proven.
+- A separate research session should cover professional cinematic terminology, lighting, atmosphere, lens language, camera angles, and motion prompting; do not dilute the fidelity experiment with that work yet.
 
 ## Current biggest unknowns
 
-1. Can current image/video models preserve the identity of a real house while making it convincingly miniature?
-2. Can they maintain geometry, windows, rooflines, landscaping, room layouts, finishes, pools, etc. closely enough for listing use?
-3. Can the miniature effect be produced consistently for a practical cost per finished video?
-4. What quality ceiling can current premium workflows achieve if cost is temporarily secondary?
-5. Does the format produce measurably better retention/engagement than conventional listing video?
-6. Will luxury/upper-end agents pay materially more for bespoke/exclusive creative than the earlier $79-$249 test range?
-7. Can personalized watermarked spec previews create a viable outbound-sales funnel?
-8. Does limiting public exposure/exclusivity improve willingness to pay enough to justify a narrower go-to-market strategy?
+1. Can **our actual listing** pass the property-fidelity gate in a premium miniature still?
+2. Which image model best preserves a house: Gemini 3 Pro, Gemini 3.1 Flash, FLUX.2, Seedream 5, or GPT Image 2?
+3. Does adding drone/Matterport/geometry materially reduce roof/side/footprint errors?
+4. Which current video model best preserves the approved miniature under motion: Omni Flash, Wan 3, H3, Seedance 2.5, or Veo 3.1?
+5. How many generations/retries and human minutes does an approved client-ready clip actually require?
+6. Does a real performance plate materially improve hand/object interaction?
+7. Does the miniature format produce better retention/engagement than conventional listing media?
+8. Will luxury/upper-end agents pay materially more for bespoke/exclusive creative?
+9. Does limiting public exposure/exclusivity improve willingness to pay enough to matter?
 
 ## Immediate next actions
 
-1. Conduct a current (September 2026) production-feasibility study of the strongest image/video tools and workflows.
-2. Compare both a **best-quality premium stack** and a **lowest-cost commercially viable stack**.
-3. Research image-to-image miniature transformation, real-property fidelity, image-to-video, hand/object interaction, multi-shot consistency, generation cost, API availability, and commercial-use terms.
-4. Design three controlled real-estate prototypes: House in Hand, Real -> Miniature -> Real, and Premium Miniature Listing Unboxing.
-5. Define source-asset requirements, shot lists, prompt structure, retry assumptions, expected cost, and fidelity/pass-fail criteria before generation.
-6. If technical quality passes, consider using the San Diego realtor connection as the first private test environment.
-7. Only after technical proof should we finalize public-vs-private positioning, pricing, outbound strategy, or automation.
+1. Select **one permissioned real listing** with strong exterior images; prefer drone and/or Matterport if available.
+2. Obtain original-resolution assets and create the first **Property Identity Pack + Class A invariants ledger**.
+3. Choose one canonical real hero frame.
+4. Generate the miniature still A/B with **Gemini 3 Pro Image** and **FLUX.2 Max or Seedream 5.0 Pro**.
+5. Do **not** begin video until one still passes side-by-side property QC.
+6. Build **Real -> Miniature -> Real** as separated stages.
+7. A/B **Gemini Omni Flash 1.1** and **Wan 3.0** for transitions; use **H3/Hailuo 3** as an inexpensive miniature-motion control.
+8. Log model/version, generations, rejection reasons, generation spend, edit minutes, and total human time.
+9. If Test 1 passes, build House in Hand with a real hand/proxy performance plate.
+10. If Tests 1 and 2 pass, build the premium unboxing.
+11. Only after technical proof use the San Diego realtor connection for a private market reaction test.
+12. Then conduct the separate cinematic-language research session.
 
 ## Current recommendation
 
-**Green-light a focused production-feasibility and prototype-design phase, not a full business build.**
-
-The immediate objective is to determine whether current tools can create an output that feels genuinely premium and preserves the identity of an actual listing.
+**Proceed immediately to one controlled, permissioned Real -> Miniature -> Real production test. Do not build the broader business, website, automation, or public launch yet.**
