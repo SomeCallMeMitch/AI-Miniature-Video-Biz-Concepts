@@ -6,6 +6,8 @@
 
 The project is testing whether AI-generated miniature/scale-model treatments of **actual real-estate listings** can become premium, factual, scroll-stopping listing media.
 
+The first ChatGPT image-generation experiment has now been run on a real listing reference set. It produced one usable front hero miniature and one usable aerial miniature, but it failed to preserve the property reliably across front, rear, and aerial viewpoints. The project is paused by the user until tonight/tomorrow; on resumption, the priority shifts to defining the realtor use case and most saleable video format before investing in a full video build.
+
 A current September 2026 production-feasibility study has now been completed and saved at:
 
 - `research/2026-09-production-stack-feasibility.md`
@@ -23,6 +25,21 @@ The preferred production philosophy is:
 Recommended production structure:
 
 **permissioned listing assets -> property identity/geometry pack -> approved miniature still or geometry-locked maquette -> constrained video generation/editing -> real hand/performance plate where needed -> conventional finishing -> property-fidelity QC**
+
+### First direct image-generation evidence — 2026-09-02
+
+**Observed:**
+
+- The first front miniature was close enough to prove that a recognizable, compelling hero image is feasible.
+- A second front pass improved the missing pergola/trellis details above the entry and windows, although the facade remained imperfect.
+- The aerial miniature was close enough to retain as a useful approved view; the road is unnecessary and can be removed or reframed later.
+- Rear/backyard attempts failed the property-fidelity gate. The garage and driveway orientation were reversed, front-facade elements reappeared at the rear, and roof/cupola details drifted.
+
+**Prior assumption:** A well-anchored reference packet might support a convincing pseudo-360 or coherent front/aerial/rear miniature set.
+
+**New evidence:** Even with front, rear, drone, roof, and floorplan references, ChatGPT image generation treated difficult viewpoint changes as opportunities to reinterpret the house rather than preserve one stable architectural object.
+
+**Revised conclusion:** ChatGPT image generation is currently useful for approved hero images, but it is not reliable for true 360 or automatic multi-view architectural continuity. Near-term production should use one approved hero view or a small set of independently approved views. Do not imply that those images constitute a coherent 3D model, and do not generate an orbit between them unless real geometry supports the unseen angles.
 
 ## Current leading opportunity
 
@@ -48,6 +65,12 @@ Potential buyers remain:
 The selling proposition remains:
 
 > Turn an ordinary listing into a scroll-stopping social asset while preserving the identity of the actual property.
+
+### Realtor-value hypothesis — 2026-09-02
+
+The leading commercial hypothesis is now more specific: the miniature may be most valuable as **scroll-stopping paid-ad or social creative**, not as generic listing media for every agent.
+
+Agents already investing in paid listing promotion, frequent Instagram/Reels/TikTok content, or differentiated luxury-property marketing are more plausible early buyers than low-activity agents who rarely advertise or post. This is still a hypothesis and needs current market research and interviews before it becomes positioning.
 
 ### #2 — Miniature product affiliate/content channel
 
@@ -190,8 +213,10 @@ Use this only **after** the technical workflow passes. It is not evidence of dem
 - Miniature itself is not a moat.
 - Exact property identity matters more than generating a pretty miniature.
 - Current AI can support the workflow but does not guarantee architectural truth.
+- Direct testing confirms that strong single-view outputs do not imply cross-view consistency.
 - Approve the miniature still/geometry before asking a video model to animate it.
 - Avoid free camera orbits unless unseen angles are supported by real references/3D geometry.
+- Use one approved hero image or a small independently approved view set rather than claiming a true 360 workflow.
 - Human hands remain a strong scale cue, but hand+property interaction is a higher-risk technical problem.
 - Performance-plate/V2V may be more reliable than pure generation for hands and packaging.
 - Conventional editing/compositing is part of the premium workflow, not a failure of the AI approach.
@@ -201,31 +226,30 @@ Use this only **after** the technical workflow passes. It is not evidence of dem
 
 ## Current biggest unknowns
 
-1. Can **our actual listing** pass the property-fidelity gate in a premium miniature still?
-2. Which image model best preserves a house: Gemini 3 Pro, Gemini 3.1 Flash, FLUX.2, Seedream 5, or GPT Image 2?
-3. Does adding drone/Matterport/geometry materially reduce roof/side/footprint errors?
-4. Which current video model best preserves the approved miniature under motion: Omni Flash, Wan 3, H3, Seedance 2.5, or Veo 3.1?
-5. How many generations/retries and human minutes does an approved client-ready clip actually require?
-6. Does a real performance plate materially improve hand/object interaction?
-7. Does the miniature format produce better retention/engagement than conventional listing media?
-8. Will luxury/upper-end agents pay materially more for bespoke/exclusive creative?
-9. Does limiting public exposure/exclusivity improve willingness to pay enough to matter?
+1. What exact video format and use case is most saleable to a realtor?
+2. Which realtor segments already spend on paid listing ads or publish enough social content to value a scroll-stopping creative?
+3. What current examples show agents using paid/social listing promotion, and where would a miniature asset fit in those campaigns?
+4. Does Gemini Pro materially improve property fidelity or cross-view consistency versus the ChatGPT image-generation test?
+5. Can an approved single-view hero miniature remain rigid and recognizable under controlled video motion?
+6. Does adding actual 3D geometry materially reduce roof/side/footprint errors when a viewpoint change is required?
+7. Which video model best preserves an approved miniature under motion: Omni Flash, Wan 3, H3, Seedance 2.5, or Veo 3.1?
+8. How many generations/retries and human minutes does an approved client-ready clip actually require?
+9. Does the miniature format produce better retention/engagement than conventional listing media?
+10. Will luxury/upper-end agents pay materially more for bespoke/exclusive creative?
 
 ## Immediate next actions
 
-1. Select **one permissioned real listing** with strong exterior images; prefer drone and/or Matterport if available.
-2. Obtain original-resolution assets and create the first **Property Identity Pack + Class A invariants ledger**.
-3. Choose one canonical real hero frame.
-4. Generate the miniature still A/B with **Gemini 3 Pro Image** and **FLUX.2 Max or Seedream 5.0 Pro**.
-5. Do **not** begin video until one still passes side-by-side property QC.
-6. Build **Real -> Miniature -> Real** as separated stages.
-7. A/B **Gemini Omni Flash 1.1** and **Wan 3.0** for transitions; use **H3/Hailuo 3** as an inexpensive miniature-motion control.
-8. Log model/version, generations, rejection reasons, generation spend, edit minutes, and total human time.
-9. If Test 1 passes, build House in Hand with a real hand/proxy performance plate.
-10. If Tests 1 and 2 pass, build the premium unboxing.
-11. Only after technical proof use the San Diego realtor connection for a private market reaction test.
-12. Then conduct the separate cinematic-language research session.
+1. Respect the user's pause until tonight/tomorrow.
+2. On resumption, research the most saleable miniature-video format and the exact realtor job/use case it serves.
+3. Identify realtor segments and concrete examples of agents using paid listing ads or heavy social promotion; distinguish observed behavior from inferred willingness to pay.
+4. Define the first offer/test around that use case, including channel, duration, aspect ratio, hook, CTA, and success metric.
+5. If useful, test the same property/reference packet in **Gemini Pro** and compare it with the ChatGPT results using the existing Class A fidelity gate.
+6. Treat the approved front and aerial miniatures as independent hero assets; do not attempt a true 360 from them.
+7. After the use case is chosen, build the smallest relevant video test. **Real -> Miniature -> Real** remains the technical default unless market research identifies a stronger saleable format.
+8. A/B the selected video model(s) and log model/version, generations, rejection reasons, generation spend, edit minutes, and total human time.
+9. Use the San Diego realtor connection only as a later private feedback path, not as demand evidence.
+10. Keep cinematic-language research as a separate focused session.
 
 ## Current recommendation
 
-**Proceed immediately to one controlled, permissioned Real -> Miniature -> Real production test. Do not build the broader business, website, automation, or public launch yet.**
+**Pause as requested. On resumption, determine the realtor use case and most saleable format first, focusing on agents already buying attention through paid ads or heavy social activity. Then run the smallest controlled video test that matches that use case, using approved single-view hero assets rather than a true 360. Do not build the broader business, website, automation, or public launch yet.**
