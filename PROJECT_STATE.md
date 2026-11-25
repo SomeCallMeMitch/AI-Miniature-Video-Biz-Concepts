@@ -1,5 +1,10 @@
 # Project State
 
+## Animation production methods added — 2026-11-25
+
+[Ten-skill applicability and contact guide](docs/10-animation-contact-and-review.md) · [Reusable contact-review skill](.agents/skills/animation-contact-review/SKILL.md) · [Session record](archive/chats/2026-11-25-animation-contact-lessons.md). General lessons only; private branded media awaits a public-visibility decision. This archival addition preserves the separate Blender V07 pilot and real-estate work. No new render or market/model validation. Next: stage grips and limb clearance, review a short test, then inspect the assembled encode.
+
+
 **Last updated:** 2026-11-25
 
 ## Current status
