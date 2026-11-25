@@ -1,5 +1,11 @@
 # Next Chat Handoff
 
+## ToteStream Blender pilot — 2026-11-25
+
+Use V07 for the single tote. [The pilot handoff and ZIP](archive/chats/2026-11-25-totestream-blender-review.md) identify historical study renders. Owner review is pending.
+
+## Prior real-estate handoff
+
 **Date:** 2026-09-02
 
 ## Read first

@@ -1,6 +1,6 @@
 # Project State
 
-**Last updated:** 2026-09-02
+**Last updated:** 2026-11-25
 
 ## Current status
 
@@ -253,3 +253,7 @@ Use this only **after** the technical workflow passes. It is not evidence of dem
 ## Current recommendation
 
 **Pause as requested. On resumption, determine the realtor use case and most saleable format first, focusing on agents already buying attention through paid ads or heavy social activity. Then run the smallest controlled video test that matches that use case, using approved single-view hero assets rather than a true 360. Do not build the broader business, website, automation, or public launch yet.**
+
+## ToteStream product-model pilot — 2026-11-25
+
+The V07 single tote retains the V05 exterior and adds molded interior and rim detail. The same Blender asset supplies both open and closed views. [Pilot progress and assets](archive/chats/2026-11-25-totestream-blender-review.md)
